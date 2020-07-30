@@ -1,0 +1,126 @@
+*{
+  margin:0px;
+  padding:0px;
+}
+body,html{
+  height: 100%;
+}
+.banner{
+  background: url("close-up-of-row-325876.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height:100%;
+}
+.banner1{
+    overflow: visible;
+    position: relative;
+  }
+.banner1::before{
+    content: "";
+    right:0;
+    left:0;
+    position: fixed;
+    z-index:-1;
+
+    display: block;
+    background: url("man-wearing-black-hat-and-black-coat-157675.jpg");
+    background-size: cover;
+    width: 100%;
+    height:100vw;
+
+    filter:blur(5px);
+  }
+.container{
+  width:80%;
+  height:10%;
+  color: white;
+  background:rgb(2,0,36);
+  background: linear-gradient(90deg,rgba(2,0,36,1)0%,rgba(162,162,164,0.4599729195619241)38%,rgba(178,179,179,1)99%);
+  border-radius: 20px;
+  margin-left:100px;
+  padding:0px;
+  box-shadow: 3px 2px 4px #111;
+}
+#header{
+  font-size: 30px;
+  font-weight: bold;
+  display: inline-block;
+  float: left;
+  margin-top: 5px;
+}
+nav ul{
+  float:right;
+}
+
+nav li{
+  display: inline-block;
+  float: left;
+  list-style-type:none;
+  padding: 10px;
+  margin-top: 5px;
+}
+nav a{
+  text-decoration: none;
+  color: white;
+  box-shadow: 5px 5px 5px #333;
+  font-size: 20px;
+  border-radius: 9px;
+}
+.content{
+  position: relative;
+  top:20%;
+
+
+}
+.blog{
+  width:45%;
+  max width:450px;
+  margin:20px auto;
+  background-color: #eee;
+}
+.blog img{
+  margin-left:60px;
+  width:80%;
+  height:40%;
+}
+nav a:hover{
+  box-shadow: none;
+  color:black;
+  border:1px solid #bbb;
+}
+.p{
+  position: relative;
+  top:10%;
+  left:10%;
+  padding:30px;
+  color:#eee;
+  font-size: 20px;
+  width:50%;
+  background:rgb(2,0,36);
+  background: linear-gradient(90deg,rgba(2,0,36,.9)0%,rgba(162,162,164,0.4599729195619241)38%,rgba(178,179,179,1)99%);
+  border-radius: 30px;
+  border-top: 2px solid grey;
+  border-left: 2px solid gray;
+}
+.active{
+  background: none;
+  border-radius: none;
+  color:black;
+  box-shadow: none;
+}
+@media screen and (max-width:1300px){
+  .Contact{
+    left:30%;
+    width:60%;
+  }
+}
+@media screen and (max-width:730px) {
+  .Contact{
+    left:60%;
+    width:40%;
+  }
+
+
+}
